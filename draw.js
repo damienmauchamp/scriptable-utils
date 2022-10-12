@@ -2,10 +2,9 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: red; icon-glyph: pen;
 
-module.exports.leftBar = (height, width, color) => {
+const leftBar = (height, width, color) => {
 
 	color = color || Color.white();
-
 	height = height || 100;
 	width = width || 8;
 
@@ -32,4 +31,8 @@ module.exports.leftBar = (height, width, color) => {
 
 	const resultBarImage = drawContext.getImage();
 	return resultBarImage;
+}
+
+module.exports = {
+	leftBar: leftBar,
 }
