@@ -6,5 +6,7 @@ Then import a module from URL like this :
 
 ```javascript
 const moduleHelper = importModule('moduleImport');
+
+// creates directory "modules" and file "modules/draw.js"
 const moduleDraw = await moduleHelper.importFormUrlWithFolder('modules', 'draw', 'https://raw.githubusercontent.com/damienmauchamp/scriptable-utils/main/draw.js');
 ```
